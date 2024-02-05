@@ -60,9 +60,20 @@ body {
   line-height: 1.5;
   font-size: 0.875rem;
 }
-ul {
-  list-style-type: none;
+
+
+li {
+  display : inline;
+  padding: 10px;
+  margin: 10px;
+  border: 1.6px solid rgb(87, 121, 148);
+  border-radius: 7px;
+  background-color: #b9edf0;
+  box-shadow: 0 0px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
 }
+
 a {
   text-decoration: none;
 }
@@ -85,7 +96,20 @@ h1 {
 }
 h2 {
   font-size: 2rem;
+  text-align: center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
 }
+
+.Homepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
 h3 {
   font-size: 1.25rem;
 }
@@ -385,6 +409,26 @@ Featured Tours
 .tour-btn {
   text-align: center;
 }
+
+.Hide {
+  background-color: #b9edf0;
+  border: 2px solid rgb(87, 121, 148);
+  border-radius: 5px;
+  color: rgb(25, 36, 45);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight:500;
+  padding: 3px;
+}
+
+.ShowAll {
+  background-color: #b9edf0;
+  border: 2px solid rgb(87, 121, 148);
+  border-radius: 5px;
+  color: rgb(25, 36, 45);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight:500;
+  padding: 3px;
+}
 @media screen and (min-width: 768px) {
   .featured-center {
     display: grid;
@@ -406,6 +450,7 @@ Footer
 .footer {
   background: var(--clr-grey-1);
   text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding-left: 2rem;
   padding-right: 2rem;
 }
@@ -413,14 +458,16 @@ Footer
 .footer-icons {
   display: flex;
   justify-content: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   flex-wrap: wrap;
 }
+
 .footer-link {
   color: var(--clr-white);
   text-transform: capitalize;
   font-size: 1rem;
-  margin-right: 1rem;
+  font-weight:600;
+  margin: none;
   letter-spacing: var(--spacing);
   transition: var(--transition);
 }
@@ -429,7 +476,8 @@ Footer
 }
 .footer-icon {
   font-size: 2rem;
-  margin-right: 1rem;
+  margin: 5px;
+  margin-top: none;
   color: var(--clr-white);
   transition: var(--transition);
 }
@@ -457,7 +505,7 @@ Navbar
   left: 0;
   width: 100%;
   background: var(--clr-white);
-  box-shadow: var(--dark-shadow);
+  box-shadow: 0 0px 15px rgba(0, 0, 0, 0.2);
   z-index: 2;
   height: 4rem;
   display: flex;
@@ -481,7 +529,8 @@ Navbar
   border: none;
   outline: none;
   font-size: 1.5rem;
-  color: var(--clr-primary-5);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: blanchedalmond;
   cursor: pointer;
   transition: var(--transition);
 }
@@ -497,6 +546,7 @@ Navbar
   color: var(--clr-grey-1);
   cursor: pointer;
   font-size: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .nav-link:hover {
   color: var(--clr-primary-1);
@@ -569,3 +619,53 @@ min-height:calc(100vh - 62px);
   font-size: 1.5rem;
   text-transform: uppercase;
 }
+
+
+/*Registration form*/
+.registrationapp .title {
+  text-align: center;
+  width: 400px;
+  background-color: rgb(91, 143, 180);
+  color: white;
+  padding: 20px;
+  margin: 200px auto;
+  margin-bottom: 0px;
+  border-radius: 10px 10px 0 0;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.registration {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 400px;
+  padding: 2vw 1vw;
+  background-color: rgb(129, 187, 246);
+  border-radius: 0 0 10px 10px;
+}
+
+.registration input {
+  border: 1px solid rgb(172, 171, 171);
+  border-radius: 10px;
+  padding: 1vw 1vw;
+  outline: none;
+  margin: 5px;
+}
+
+.registration input[type="submit"] {
+  background-color: rgb(65, 120, 160);
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: none;
+  border-radius: 10px;
+  padding: 1vw 1vw;
+  margin: 5px;
+  cursor: pointer;
+}
+
+

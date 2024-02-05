@@ -1,20 +1,18 @@
 import img from "../images/about.jpeg";
 import Title from "./Title";
 import Footer from "./Footer";
-import Header from "./Header";
 
-const About = () => {
+const Contact = () => {
 	return (
 		<div>
-			<Header />
 			<section className="section" id="about">
-				<Title title="about" span="us" />
+				<Title title="contact" span="us" />
 				<div className="section-center about-center">
 					<div className="about-img">
 						<img src={img} className="about-photo" alt="awesome beach" />
 					</div>
 					<article className="about-info">
-						<h3>explore the difference</h3>
+						<h3>make a change</h3>
 						<p>
 							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quisquam harum nam cumque temporibus explicabo dolorum
 							sapiente odio unde dolor?
@@ -29,8 +27,8 @@ const About = () => {
 					</article>
 				</div>
 			</section>
-			<Footer />
+            <Footer />
 		</div>
 	);
 };
-export default About;
+export default Contact;
