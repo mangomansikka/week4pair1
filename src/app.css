@@ -309,6 +309,23 @@ Services
   margin-right: auto;
 }
 
+.Filter {
+  background-color: #b9edf0;
+  border: 2px solid rgb(87, 121, 148);
+  border-radius: 5px;
+  color: rgb(25, 36, 45);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight:500;
+  padding: 4px;
+  margin: 5px;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.Filter:hover {
+  background-color: #87d9de;
+}
+
 @media screen and (min-width: 576px) {
   .services-center {
     display: grid;
@@ -410,6 +427,95 @@ Featured Tours
   text-align: center;
 }
 
+.add-tour {
+  background: var(--clr-primary-5);
+  color: var(--clr-white);
+  padding: 0.375rem 0.75rem;
+  margin-bottom: 1rem;
+  letter-spacing: var(--spacing);
+  display: inline-block;
+  font-size: 0.875rem;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: var(--transition);
+  text-transform: capitalize;
+  border-radius: var(--radius);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.submit-info {
+  background: var(--clr-primary-5);
+  color: var(--clr-white);
+  padding: 0.375rem 0.75rem;
+  letter-spacing: var(--spacing);
+  display: inline-block;
+  font-size: 0.875rem;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: var(--transition);
+  text-transform: capitalize;
+  border-radius: var(--radius);
+
+}
+
+.add-tour:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-group label {
+  font-weight: 700;
+}
+
+.form-group textarea {
+  width: 100%;
+  justify-content: space-around;
+  padding: 0.375rem 0.75rem;
+  margin: 10px;
+  border: transparent;
+  border-radius: var(--radius);
+  outline: none;
+  font-family: 'Lato', sans-serif;
+  transition: var(--transition);
+}
+
+.form-group input {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.375rem 0.75rem;
+  margin: 10px;
+  border-color: transparent;
+  border-radius: var(--radius);
+  outline: none;
+  font-family: 'Lato', sans-serif;
+  transition: var(--transition);
+}
+
+
+.submit-btn {
+  background-color: #b9edf0;
+  border: 2px solid rgb(87, 121, 148);
+  border-radius: 5px;
+  color: rgb(25, 36, 45);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight:500;
+  padding: 4px;
+  margin-left: 3px;
+  
+}
+
+.submit-btn:hover {
+  background-color: #87d9de;
+  cursor: pointer;
+}
+
 .Hide {
   background-color: #b9edf0;
   border: 2px solid rgb(87, 121, 148);
@@ -417,7 +523,28 @@ Featured Tours
   color: rgb(25, 36, 45);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight:500;
+  padding: 4px;
+  margin-left: 3px;
+}
+
+.Hide:hover {
+  background-color: #87d9de;
+  cursor: pointer;
+}
+
+.Delete {  
+  background-color: #b9edf0;
+  border: 2px solid rgb(87, 121, 148);
+  border-radius: 5px;
+  color: rgb(25, 36, 45);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight:500;
   padding: 3px;
+}
+
+.Delete:hover {
+  background-color: #87d9de;
+  cursor: pointer;
 }
 
 .ShowAll {
@@ -428,6 +555,11 @@ Featured Tours
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight:500;
   padding: 3px;
+}
+
+.ShowAll:hover {
+  background-color: #87d9de;
+  cursor: pointer;
 }
 @media screen and (min-width: 768px) {
   .featured-center {
